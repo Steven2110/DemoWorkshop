@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                Image("logo_KP")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 300, height: 300)
+                StackZ()
+                Spacer()
+            }
+            .navigationTitle("Detil employee")
+        }
     }
 }
 
